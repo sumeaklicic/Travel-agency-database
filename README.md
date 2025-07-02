@@ -40,9 +40,12 @@ Conversion rules:
 1. Entities as tables
 Each entity from the ER model becomes a table. The attributes of the entity become columns in that table, and the primary key (PK) of the entity becomes the primary key of the table.
 Relations between entities:
+
 One-to-many (1:N)
 The primary key of the "one" side table becomes the foreign key (FK) in the "many" side table.
+
 More-to-More (M:N)
 This relation requires the creation of a new table. The new table contains the primary keys of both entities involved in the relation, which together form the composite primary key of the new table.
+
 One-to-one (1:1)
 The foreign key is usually placed in one of the entities, depending on the specifics of the application. If one entity is strictly dependent on another, the foreign key is added to the dependent entity.
